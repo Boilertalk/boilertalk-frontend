@@ -1,0 +1,210 @@
+/* general content style */
+
+
+.content {
+    padding: 60px 15px 75px;
+}
+.content .content-title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+.content .content-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 40px;
+    background: #242a30;
+    height: 0px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+}
+.content .content-desc {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #242a30;
+}
+.content.has-bg {
+    padding-bottom: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.content.has-bg .content-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.content.has-bg .content-bg img {
+    max-width: 100%;
+}
+.content.has-bg .content-title:after {
+    background: #fff;
+}
+.content.has-bg .content-bg:before {
+    content: '';
+    background: url("assets/images/content-bg-cover.png");
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.content.has-bg .container {
+    position: relative;
+}
+.content.has-bg .container .content-title {
+    color: #fff;
+}
+.content.has-bg .container .content-desc {
+    color: rgba(255,255,255,0.6);
+}
+.content.has-bg h1,
+.content.has-bg h2,
+.content.has-bg h3,
+.content.has-bg h4,
+.content.has-bg h5,
+.content.has-bg h6 {
+    color: #fff;
+}
+
+/* Title style */
+
+.home {
+    padding: 0 !important;
+    color: #fff;
+}
+.home-content {
+    z-index: 1020;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 0;
+    color: #8F8E8E;
+    padding: 90px 15px;
+    text-align: left;
+}
+.home-content h1,
+.home-content h2,
+.home-content h4 {
+    color: #fff;
+    margin: 0 0 30px;
+    font-weight: 300;
+}
+.home-content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+.home-content h3 {
+    font-size: 32px;
+}
+
+.home-content p {
+    margin-bottom: 60px;
+}
+.home-content a:hover,
+.home-content a:focus {
+    color: #fff;
+}
+
+/* Our connect style */
+
+.connect {
+    position: relative;
+    overflow: hidden;
+    margin: 15%;
+}
+.connect .image img {
+    max-width: 100%;
+}
+.connect:hover .desc,
+.connect:focus .desc {
+    margin-top: -62px;
+}
+.connect .desc {
+    padding: 12px 15px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100%;
+    opacity: 0.9;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.connect .desc .desc-title {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    font-weight: 600;
+}
+.connect .desc .desc-text {
+    font-size: 12px;
+    color: #fff;
+    display: block;
+}
+
+.material-button {
+    padding: 0px 15px;
+    border-radius: 6px;
+}
+
+/* Content Separator */
+
+.separator h3 {
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+.separator p {
+    margin-bottom: 0px;
+}
+.separator .icon-large {
+    font-size: 48px;
+    float: left;
+    margin-right: 20px;
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.separator .btn {
+    margin-top: -3px;
+}
+
+/* Features */
+
+.feature {
+    margin-bottom: 30px;
+}
+.feature .icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+.feature .title {
+    margin-bottom: 5px;
+}
+.feature .icon + .info {
+    margin-left: 70px;
+}
+.feature.feature-vertical {
+    text-align: center;
+}
+.feature.feature-vertical .icon {
+    float: none;
+    margin: 0 auto 15px;
+}
+.feature.feature-vertical .info {
+    margin: 0;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<!-- Note: Running the app in Webstorm messes up the paths for assets.
+ It should work with changing the base href to boilertalk-frontend/web/ but it somehow doesn't.
+ So just use pub serve in development. Sorry for bad dart skills.
+ -->
+  <head>
+      <base href="/">
+      <title>boilertalk_frontend</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="packages/font_awesome/css/font-awesome.min.css">
+      <script defer src="main.dart" type="application/dart"></script>
+      <script defer src="packages/browser/dart.js"></script>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="packages/bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" href="packages/bootstrap/css/bootstrap-theme.css">
+      <script src="packages/bootstrap/jquery/jquery.js"></script>
+      <script src="packages/bootstrap/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
+</html>
